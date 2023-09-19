@@ -475,6 +475,12 @@ table tbody td {
   padding: 33px 17px;
 }
 
+.form-white-card {
+  background-color: #fff;
+  border: 1px solid #E9E9E9;
+  padding: 40px 30px 45px;
+}
+
 .section-title {
   font-size: 25px;
   font-weight: 700;
@@ -723,6 +729,449 @@ section + section {
 
 .Committees-list .Committee-card:hover .content-box h4 {
   color: #887852;
+}
+
+/*
+    checkbox
+*/
+/* The container */
+.form-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.form-check label {
+  padding-right: 37px;
+  cursor: pointer;
+  z-index: 99999;
+  position: relative;
+}
+
+.form-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form-check .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #f7f7f7;
+  border: 1px solid #5E6065;
+  border-radius: 2px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.form-check input:checked ~ .checkmark {
+  background-color: #887852;
+  border-color: #887852;
+}
+
+.form-check .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form-check .checkmark:after {
+  right: 7px;
+  top: 2px;
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*
+    raaaaaaaaaadio
+*/
+/* The container */
+.form-radio-inline {
+  display: inline-block;
+  padding-left: 24px;
+  margin-left: 12%;
+}
+
+.form-radio {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.form-radio label {
+  padding-right: 37px;
+  cursor: pointer;
+  z-index: 99999;
+  position: relative;
+}
+
+.form-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form-radio .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #f7f7f7;
+  border: 1px solid #5E6065;
+  border-radius: 13px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.form-radio input:checked ~ .checkmark {
+  background-color: #f7f7f7;
+  border-color: #887852;
+}
+
+.form-radio .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form-radio .checkmark:after {
+  right: 4px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 13px;
+  background-color: #887852;
+}
+
+.form-white-card .form-cont {
+  margin-bottom: 30px;
+}
+
+.form-white-card .form-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5E6065;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.form-white-card .form-label span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #9B9B9B;
+}
+
+.form-white-card .form-control {
+  background-color: #f7f7f7;
+  padding: 11px 16px;
+  line-height: 1;
+  height: 48px;
+  border: 1px solid #F7F7F7;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5E6065;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-white-card .form-control::-webkit-input-placeholder {
+  color: rgba(48, 48, 48, 0.5);
+}
+
+.form-white-card .form-control:-ms-input-placeholder {
+  color: rgba(48, 48, 48, 0.5);
+}
+
+.form-white-card .form-control::-ms-input-placeholder {
+  color: rgba(48, 48, 48, 0.5);
+}
+
+.form-white-card .form-control::placeholder {
+  color: rgba(48, 48, 48, 0.5);
+}
+
+.form-white-card .form-control:focus {
+  border-color: #887852;
+}
+
+.form-white-card .form-check-label {
+  color: #303030;
+}
+
+.form-white-card input[type="date"] {
+  text-align: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+table .form-check {
+  height: 24px !important;
+  min-height: 24px !important;
+}
+
+table .form-check input {
+  height: 24px;
+  position: relative;
+}
+
+table .form-check label {
+  height: 24px;
+}
+
+.data-table {
+  border-bottom: 2px solid #fff;
+}
+
+.data-table td {
+  vertical-align: middle;
+  padding: 0px 15px !important;
+}
+
+.Relevant-committees .form-white-card {
+  padding-bottom: 15px;
+}
+
+#relatedFields tr.selected {
+  background-color: rgba(136, 120, 82, 0.12);
+  --bs-table-accent-bg: none !important;
+}
+
+#relatedFields .form-check-input:disabled {
+  opacity: 0;
+}
+
+.data-table input[type="text"] {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5E6065;
+  height: 55px;
+  padding: 5px 15px;
+}
+
+.data-table input[type="text"]::-webkit-input-placeholder {
+  color: rgba(94, 96, 101, 0.5);
+}
+
+.data-table input[type="text"]:-ms-input-placeholder {
+  color: rgba(94, 96, 101, 0.5);
+}
+
+.data-table input[type="text"]::-ms-input-placeholder {
+  color: rgba(94, 96, 101, 0.5);
+}
+
+.data-table input[type="text"]::placeholder {
+  color: rgba(94, 96, 101, 0.5);
+}
+
+.data-table input[type="text"]:focus {
+  border: 1.5px solid #887852;
+}
+
+.delete-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(136, 120, 82, 0.12);
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*
+        Subtasks
+*/
+.Subtasks {
+  margin-bottom: 90px;
+}
+
+.Subtasks .add-table {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  padding: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Subtasks .add-table p {
+  font-size: 16px;
+  color: #756B65;
+  margin-bottom: 30px;
+}
+
+.Subtasks .add-table button {
+  border: 1px solid #756B65;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #756B65;
+  font-size: 16px;
+  width: 195px;
+  padding: 13px 20px 10px;
+}
+
+.Subtasks .add-table button img {
+  margin-left: 12px;
+}
+
+.Subtasks .hidden-section {
+  margin-top: -60px;
+  display: none;
+}
+
+.Subtasks .hidden-section .add-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Subtasks .hidden-section .add-btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 40px;
+  background-color: #756B65;
+  border: 1px solid #756B65;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 10px 11px;
+  margin-bottom: 12px;
+}
+
+.Subtasks .hidden-section .add-btn button img {
+  margin-left: 12px;
+}
+
+.Subtasks .hidden-section select {
+  background-color: transparent;
+}
+
+.save-btn {
+  margin-bottom: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.save-btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 48px;
+  background-color: #756B65;
+  border: 1px solid #756B65;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 20px 11px;
+  margin-bottom: 12px;
+}
+
+.save-btn button img {
+  margin-left: 20px;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 14px;
+  color: #756B65;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../images/select-arr.svg);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  padding: 0 5px;
 }
 
 @media (min-width: 1400px) {

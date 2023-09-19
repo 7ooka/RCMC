@@ -314,7 +314,7 @@ table{
         --bs-table-accent-bg:#fff !important
       }
       &:hover{
-        background-color:  rgba($color: #887852, $alpha: 0.12);
+        background-color:  rgba($color: $green-color, $alpha: 0.12);
         --bs-table-accent-bg: none !important
       }
     }
@@ -335,6 +335,11 @@ table{
   background-color: #fff;
   border: 1px solid #E9E9E9;
   padding: 33px 17px ;
+}
+.form-white-card{
+  background-color: #fff;
+  border: 1px solid #E9E9E9;
+  padding: 40px 30px 45px ;
 }
 .section-title{
   font-size: 25px;
@@ -546,12 +551,446 @@ section + section{
       box-shadow: 0 10px 40px rgba($color: #000, $alpha: 0.1);  
       .content-box{
         h4{
-          color: #887852;
+          color: $green-color;
         }
       }
     }
   }
 }
+
+
+
+
+
+  // checkbox + radio
+
+/*
+    checkbox
+*/
+
+
+/* The container */
+.form-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+
+  label {
+    padding-#{$start-direction}: 37px;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+  }
+  
+  
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    #{$start-direction}: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #f7f7f7;
+    border: 1px solid #5E6065;
+    border-radius: 2px;
+    transition: 200ms;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  // .form-check:hover input ~ .checkmark {
+  //   background-color: #ccc;
+  // }
+  
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    background-color: $green-color;
+    border-color: $green-color;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+   input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+   .checkmark:after {
+    #{$start-direction}: 7px;
+    top: 2px;
+    width: 7px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+}
+
+
+
+
+
+
+
+/*
+    raaaaaaaaaadio
+*/
+
+
+/* The container */
+.form-radio-inline{
+  display: inline-block;
+  padding-#{$end-direction}: 24px;
+  margin-#{$end-direction}: 12%;
+}
+.form-radio {
+  // display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+
+  label {
+    padding-#{$start-direction}: 37px;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+  }
+  
+  
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    #{$start-direction}: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #f7f7f7;
+    border: 1px solid #5E6065;
+    border-radius: 13px;
+    transition: 200ms;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  // .form-check:hover input ~ .checkmark {
+  //   background-color: #ccc;
+  // }
+  
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    background-color: #f7f7f7;
+    border-color: $green-color;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+   input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+   .checkmark:after {
+    #{$start-direction}: 4px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 13px;
+    background-color: $green-color;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+// add-task
+
+.form-white-card {
+  .form-cont{
+    margin-bottom: 30px;
+  }
+  .form-label{
+    display: block;
+    font-size: 16px;
+    font-weight: $w-normal;
+    color: $grey-color;
+    line-height: 1;
+    margin-bottom: 15px;
+    span{
+      font-size: 16px;
+      font-weight: $w-light;
+      color: #9B9B9B;
+    }
+  }
+  .form-control{
+    background-color: #f7f7f7;
+    padding: 11px 16px;
+    line-height: 1;
+    height: 48px;
+    border: 1px solid #F7F7F7;
+    transition: 300ms;
+    font-size: 16px;
+    font-weight: $w-normal;
+    color: $grey-color;
+    box-shadow: none;
+    &::placeholder{
+      color: rgba($color: $dark-one, $alpha: 0.5);
+    }
+    &:focus{
+      border-color: $green-color;
+    }
+  }
+  .form-check-label{
+    color: $dark-one;
+  }
+
+
+  input[type="date"] {
+    text-align: #{$start-direction};
+    flex-direction: row-reverse;
+  }
+
+
+
+
+
+}
+
+table{
+  .form-check{
+    height: 24px !important;
+    min-height: 24px !important;
+    input{
+      height: 24px;
+      position: relative;
+    }
+    label{
+      height: 24px;
+    }
+  }
+}
+
+.data-table{
+  border-bottom: 2px solid #fff;
+  td{
+    vertical-align: middle;
+    padding: 0px 15px !important;
+  }
+}
+
+
+.Relevant-committees{
+  // margin-bottom: 60px;
+  .form-white-card{
+    padding-bottom: 15px;
+  }
+}
+
+
+
+#relatedFields{
+  tr{
+    &.selected{
+      background-color: rgba(136, 120, 82, 0.12);
+      --bs-table-accent-bg: none !important;
+    }
+  }
+  .form-check-input:disabled{
+    opacity: 0;
+  }
+}
+.data-table{
+  input[type="text"] {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: $w-medium;
+    color: $grey-color;
+    height: 55px;
+    padding: 5px 15px;
+    &::placeholder{
+      color:rgba($color: $grey-color, $alpha: 0.5)
+    }
+    &:focus{
+      border: 1.5px solid $green-color;
+    }
+  }
+}
+.delete-btn{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba($color: $green-color, $alpha: 0.12);
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
+
+
+/*
+        Subtasks
+*/
+
+.Subtasks{
+  margin-bottom: 90px;
+  .add-table{
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+      font-size: 16px;
+      color: $main-color;
+      margin-bottom: 30px;
+    }
+    button{
+      border: 1px solid $main-color;
+      background-color: transparent;
+      box-shadow: none;
+      outline: none;
+      color: $main-color;
+      font-size: 16px;
+      width: 195px;
+      padding: 13px 20px 10px ;
+      img{
+        margin-#{$end-direction}: 12px;
+      }
+    }
+
+  }
+  .hidden-section{
+    margin-top: -60px;
+    display: none;
+
+    .add-btn{
+      display: flex;
+      justify-content: flex-end;
+      button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 40px;
+        background-color: $main-color;
+        border: 1px solid $main-color;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 16px;
+        padding: 13px 10px 11px;
+        margin-bottom: 12px;
+        img{
+          margin-#{$end-direction}: 12px;
+        }
+      }
+    }
+    select {
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+.save-btn{
+  margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      width: 140px;
+      height: 48px;
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      padding: 13px 20px 11px;
+      margin-bottom: 12px;
+      img{
+        margin-#{$end-direction}: 20px;
+      }
+    }
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 14px;
+  color: $main-color;
+  appearance: none;
+  background-image: url(../images/select-arr.svg);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  padding: 0 5px;
+}
+
+
+
+
+
+
+
 
 // LTR
 // html[dir="ltr"] {

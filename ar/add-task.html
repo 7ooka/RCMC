@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>الرئيسية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- fontawesome5 -->
+  <!-- <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"> -->
+  <!-- owl.carousel -->
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+ 
+  <!-- custom -->
+  <link rel="stylesheet" href="../assets/css/styleRTL.css">
+</head>
+
+<body>
+  <!-- header -->
+
+  <section class="main-navbar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="../assets/images/RCMC-logo.svg" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-wrapper">
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item show-on-fixed">
+                <a class="nav-link home-btn" href="#">
+                  
+                </a>
+              </li> -->
+              
+                  <li class="nav-item ">
+                    <a class="nav-link active" href="#" role="button" >
+                      المهام
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#"role="button" >
+                      الجهات
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#"role="button" >
+                      اللجان
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#"role="button" >
+                      التقارير
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link search-toggle" href="javascript:;"><img src="../assets/images/search.svg" alt=""
+                        srcset=""></a>
+                    <div class="search-box">
+                      <form action="" method="post">
+                        <a href="javascript:;" class="exit-btn search-toggle">
+                          <img src="../assets/images/close.svg" alt="">
+                        </a>
+                        <input type="text" name="search" class="form-control" placeholder="ابحث ...">
+                        <button type="submit" class="search-btn"><img src="../assets//images/Search2.svg" alt=""></button>
+                      </form>
+                    </div>
+                  </li>
+            </ul>
+          </div>
+        </div>
+       
+      </nav>
+    </div>
+  </section>
+
+
+  <nav aria-label="breadcrumb" class="breadcrumb-area">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12">
+          <h2>
+            إضافة مهمة
+          </h2>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="">
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title">
+          البيانات الأساسية
+        </h3>
+      </div>
+    </div>
+    <div class="form-white-card ">
+        <div class="col-xl-12">
+            <form class="row">
+              <div class="col-lg-6 form-cont">
+                <label for="taskName" class="form-label">
+                  اسم المهمة
+                </label>
+                <input type="text" placeholder="حقل إدخال النص" class="form-control" id="taskName">
+              </div>
+              <div class="col-lg-6 form-cont">
+                <label for="aboutTask" class="form-label">
+                  نبذة عن المهمة
+                </label>
+                <input type="text" class="form-control" id="aboutTask" placeholder="حقل إدخال النص">
+              </div>
+              <div class="col-lg-6 form-cont">
+                <label for="taskType" class="form-label">
+                  نوع المهمة
+                </label>
+                <select class="form-control" name="" id="">
+                  <option value="0">
+                    يرجى تحديد اختيار
+                  </option>
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
+                    2
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-6 form-cont">
+                <label for="taskTime" class="form-label">
+                  الإطار الزمني للمهمة
+                  <span>
+                    (يتم تحديد أسبوعين مع إمكانية تغيير الفترة)
+                  </span>
+                </label>
+                <input type="date" class="form-control" id="taskTime" >
+              </div>
+              <div class="col-lg-6 form-cont">
+                <label for="taskType" class="form-label">
+                 درجة الأهمية
+                </label>
+                <div class="radio-inline-container">
+                  <div class="form-radio  form-radio-inline">
+                    <input class="form-check-input" type="radio" value="option3" id="inlineRadio1" name="inlineRadioOptions">
+                    <span class="checkmark"></span>
+                    <label class="form-check-label" for="inlineRadio1">
+                      عالي 
+                    </label>
+                  </div>
+                  <div class="form-radio  form-radio-inline">
+                    <input class="form-check-input" type="radio" value="option2" id="inlineRadio2" name="inlineRadioOptions">
+                    <span class="checkmark"></span>
+                    <label class="form-check-label" for="inlineRadio2">
+                     متوسط
+                    </label>
+                  </div>
+                  <div class="form-radio  form-radio-inline">
+                    <input class="form-check-input" type="radio" value="option3" id="inlineRadio3" name="inlineRadioOptions">
+                    <span class="checkmark"></span>
+                    <label class="form-check-label" for="inlineRadio3">
+                     منخفض
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-lg-6 form-cont">
+                <label for="taskType" class="form-label">
+                  التصعيد للرئيس التنفيذي في حال التاخير
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <span class="checkmark"></span>
+
+                  <label class="form-check-label" for="flexCheckDefault">
+                    يتم ارسال تنبيه بالتاخير للرئيس التنفيذي عن المهمة
+                  </label>
+                </div>
+                
+              </div>
+
+
+
+              <div class="col-lg-6 ">
+                <label for="TaskTo" class="form-label">
+                  إسناد المهمة إلى
+                </label>
+                <input type="text" class="form-control" id="TaskTo" placeholder="حقل إدخال النص">
+              </div>
+
+            </form>
+    </div>
+   </div>
+  </section>
+
+
+  <section class="">
+    <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <h3 class="section-title">
+          الجهات ذات العلاقة
+         </h3>
+       </div>
+     </div>
+     <div class=" ">
+       <div class="row">
+         <div class="col-xl-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-borderless table-hover data-table" id="relatedFields">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">اسم الجهة</th>
+                  <th scope="col">الإجراء المطلوب</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label" for="relatedFields1">
+                        <input class="form-check-input" type="checkbox" value="" id="relatedFields1" >
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    هيئة الحكومة الرقمية
+                  </td>
+                  <td>
+                    <input type="text" disabled placeholder="أدخل نص الإجراء المطلوب*">
+                  </td>
+                  
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label" for="relatedFields2">
+                        <input class="form-check-input" type="checkbox" value="" id="relatedFields2" >
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    وزارة النقل
+                  </td>
+                  <td>
+                    <input type="text" disabled placeholder="أدخل نص الإجراء المطلوب*">
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label" for="relatedFields3">
+                        <input class="form-check-input" type="checkbox" value="" id="relatedFields3" >
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    هيئة الأمن السيبراني
+                  </td>
+                  <td>
+                    <input type="text" disabled placeholder="أدخل نص الإجراء المطلوب*">
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label" for="relatedFields4">
+                        <input class="form-check-input" type="checkbox" value="" id="relatedFields4" >
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    وزارة البيئة والمياة والزراعة
+                  </td>
+                  <td>
+                    <input type="text" disabled placeholder="أدخل نص الإجراء المطلوب*">
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label" for="relatedFields5">
+                        <input class="form-check-input" type="checkbox" value="" id="relatedFields5" >
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    وزارة الصحة
+                  </td>
+                  <td>
+                    <input type="text" disabled placeholder="أدخل نص الإجراء المطلوب*">
+                  </td>
+                  
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label" for="relatedFields6">
+                        <input class="form-check-input" type="checkbox" value="" id="relatedFields6" >
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                  وزارة السياحة
+                  </td>
+                  <td>
+                    <input type="text" disabled placeholder="أدخل نص الإجراء المطلوب*">
+                  </td>
+                  
+                </tr>
+
+                
+             
+
+              </tbody>
+            </table>
+          </div>
+       </div>
+     </div>
+    </div>
+   </section>
+ 
+
+
+   <section class="Relevant-committees">
+    <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <h3 class="section-title">
+          اللجان ذات العلاقة
+         </h3>
+       </div>
+     </div>
+     <div class="form-white-card  ">
+         <div class="col-xl-12">
+             <form class="row" id="relevantCommittees">
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees1" checked>
+                    <span class="checkmark"></span>
+                    <label class="form-check-label" for="relevantCommittees1">
+                      اللجنة الهندسية لمشروع ديار الحرم
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees2">
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees2">
+                      اللجنة الهندسية لمشروع تطوير الحرمين الشريفين
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees3" >
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees3">
+                      لجنة السياسات والمنافسات
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees4" checked>
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees4">
+                      لجنة العلاقات مع الجهات الخارجية
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees5" checked>
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees5">
+                      اللجنة الهندسية لمشروع ديار الحرم
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees6">
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees6">
+                      اللجنة الهندسية لمشروع تطوير الحرمين الشريفين
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees7">
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees7">
+                      لجنة السياسات والمنافسات
+                    </label>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-6 form-cont">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="relevantCommittees8">
+                    <span class="checkmark"></span>
+
+                    <label class="form-check-label" for="relevantCommittees8">
+                      لجنة العلاقات مع الجهات الخارجية
+                    </label>
+                  </div>
+                  
+                </div>
+             </form>
+
+     </div>
+    </div>
+   </section>
+
+
+   <section class="Subtasks">
+    <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <h3 class="section-title">
+          المهام الفرعية
+         </h3>
+       </div>
+     </div>
+     <div class="add-table">
+      <p>
+        لم تقم بإضافة أي مهام فرعية إضغط إضافة لتتمكن من إضافة المهام الفرعية
+      </p>
+      <button onclick="addSubTasks()">
+        <img src="../assets/images/plus-2.svg" alt="">
+        إضافة مهام فرعية
+      </button>
+     </div>
+
+     <div class="hidden-section ">
+       <div class="row">
+        <div class="col-12">
+          <div class="add-btn">
+            <button onclick="addTableRow()">
+              <img src="../assets/images/plus.svg" alt="">
+              إضافة
+            </button>
+          </div>
+        </div>
+         <div class="col-xl-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-borderless table-hover data-table" id="subTasksTable">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    عنوان المهمة
+                  </th>
+                  <th scope="col">
+                    مختصر عن المهمة الفرعية
+                  </th>
+                  <th scope="col">
+
+                    اسم المسؤول
+                  </th>
+                  <th scope="col">
+                     وزن المهمة %
+                  </th>
+                  <th scope="col">
+                  
+                  </th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <td>
+                    <input type="text"  placeholder="أدخل عنوان* ">
+                  </td>
+                  <td>
+                  <input type="text" placeholder=" أدخل وصف مختصر عن المهمة">
+                  </td>
+                  <td>
+                    <select name="" id="">
+                      <option value="0">
+                        يرجى تحديد اختيار
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text"  placeholder="أدخل النسبة*">
+                  </td>
+                  <td>
+                    <button class="delete-btn"">
+                      <div class="img-box">
+                        <img src="../assets/images/delete.svg" alt="">
+                      </div>
+                    </button>
+                  </td>
+                  
+                </tr> -->
+
+                
+             
+
+              </tbody>
+            </table>
+          </div>
+       </div>
+     </div>
+    </div>
+   </section>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="save-btn">
+          <button type="submit" onclick="">
+            <img src="../assets/images/save.svg" alt="">
+            حفظ
+          </button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="top-footer">
+
+      <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+              <div class="footer-logo text-center">
+                <a href="#">
+                  <img src="../assets/images/RCMC-logo.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="footer-content-box text-center">
+                <p>
+                  جميع الحقوق محفوظة للهيئة الملكية لمدينة مكة المكرمة والمشاعر المقدسة 2023
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="../assets/js/jQueryV3.5.js"></script>
+  <!-- Bootstrap -->
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <!-- owl carousel -->
+  <script src="../assets/js/owl.carousel.min.js"></script>
+
+
+  <script src="../assets/js/aos.js"></script>
+
+
+  <!-- custom Js -->
+  <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

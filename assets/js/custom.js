@@ -101,7 +101,7 @@ $(document).click(function(e) {
 if (!$(e.target).is('.search-box input, .search-toggle*')) {
 $(".search-box").hide();
 $("body").removeClass("header-popup-open");
-console.log("hhhhhhhhhhh");
+// console.log("hhhhhhhhhhh");
 $(".search-box").toggleClass("open-search");
 $(".search-box input").val("");
 
@@ -109,4 +109,105 @@ $(".search-box input").val("");
 
 $(".html5-video-player").contents().find(".ytp-pause-overlay").remove();
 }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+relatedFields
+*/
+
+
+
+$("#relatedFields .form-check-input").on("click", function (e) {
+  $("#relatedFields tr").removeClass("selected")
+
+  console.log("index" ,  $(this).parents("tr").index());
+  $(this).parents("tr").find("input").prop('disabled', false).focus();
+  $(this).parents("tr").addClass("selected")
+
+})
+
+
+
+function addSubTasks(){
+  console.log("addSubTasks()");
+  $(".Subtasks .add-table").addClass("d-none");
+  $(".Subtasks .hidden-section").fadeIn();
+
+  
+}
+
+function addTableRow(){
+  console.log("ggg");
+  $("#subTasksTable > tbody:last-child")
+  .append($('<tr>')
+    .append($('<td>')
+
+      .append($('<input>')
+      .attr('type', 'text')
+      .attr('placeholder', 'أدخل عنوان*')
+      .attr('class', 'input-box')
+      )
+    )
+    .append($('<td>')
+
+      .append($('<input>')
+      .attr('type', 'text')
+      .attr('placeholder', 'أدخل وصف مختصر عن المهمة')
+      )
+    )
+    .append($('<td>')
+      .append($(' <select>')
+        .append($(' <option>  يرجى تحديد اختيار</option>').attr('value', '0'))
+        .append($(' <option>  1</option>') .attr('value', '1'))
+        .append($(' <option>  2</option>').attr('value', '2'))
+        
+      )
+    )
+    .append($('<td>')
+      .append($('<input>')
+      .attr('type', 'text')
+      .attr('placeholder', 'أدخل النسبة*')
+      )
+    )
+
+    .append($('<td>')
+      .append($('<button>')
+      .attr('class', 'delete-btn')
+      // .attr('onclick', 'deleteRow()')
+        .append($('<div>')
+        .attr('class', 'img-box')
+          .append($('<img>')
+          .attr('src', '../assets/images/delete.svg'
+          )
+        )
+        
+        
+        )
+      )
+    )
+
+  )
+
+  $("#subTasksTable > tbody tr .input-box").focus();
+}
+
+$("#subTasksTable").on("click", ".delete-btn", function() {
+  $(this).closest("tr").remove();
 });

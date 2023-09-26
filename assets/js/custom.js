@@ -211,3 +211,350 @@ function addTableRow(){
 $("#subTasksTable").on("click", ".delete-btn", function() {
   $(this).closest("tr").remove();
 });
+
+
+
+
+
+
+
+
+
+
+
+// $(".save-btn button").on('click', function() {
+//   console.log("ooooo");
+//   $('html, body').animate({
+//     scrollTop: $('.scroll-sec').offset().top,
+//   });
+// });
+
+
+$('.owl-carousel-fav').owlCarousel({
+  margin:15,
+  nav:false,
+  rtl: true,
+  items:4,
+  dots:true,
+  mouseDrag:true,
+  // slideBy:1,
+  
+//   responsive : {
+//     // breakpoint from 0 up
+//     0 : {
+//       items:2,
+//     },
+//     // breakpoint from 480 up
+//     480 : {
+
+//     },
+//     // breakpoint from 768 up
+//     768 : {
+//       items:2,
+//     },
+//     1650 : {
+//       items:4,
+//     }
+// }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const pie1 = document.getElementById('pieChart1');
+
+var pie1Colors =[
+  '#2ACE97',
+  '#E96363',
+  "#DCB456",
+  '#6399E9'
+
+]
+
+  new Chart(pie1, {
+    type: 'pie',
+    data: {
+      labels: [
+        'مشروع',
+        'اجتماع',
+        'موائمة',
+        'تقرير',
+     
+    ],
+      datasets: [{
+        data: [
+          45,
+          35,
+          12,
+          17,
+        ],
+        borderWidth: 0,
+        backgroundColor: pie1Colors,
+        color:'#756B65'
+      },
+    ]
+    },
+    options: {
+      // scales: {
+      //   y: {
+      //     beginAtZero: true
+      //   }
+      // }
+      plugins: {
+        legend: {
+          position:'right',
+          align:'center',
+            labels: {
+              padding:30,
+              usePointStyle:true,
+              // pointStyle:'circle',
+                // This more specific font property overrides the global property
+                font: {
+                    size: 12,
+                    family:"Suisse"
+                }
+            }
+        }
+      }
+    }
+  });
+
+
+
+
+
+
+
+
+
+  const pie2 = document.getElementById('pieChart2');
+
+  var pie2Colors =[
+    '#2ACE97',
+    '#E96363',
+    '#6399E9'
+  
+  ]
+  
+    new Chart(pie2, {
+      type: 'pie',
+      data: {
+        labels: [
+          'على المسار',
+          'مكتمل',
+          'متأخر',
+       
+      ],
+        datasets: [{
+          data: [
+            40,
+            45,
+            15,
+          ],
+          borderWidth: 0,
+          backgroundColor: pie2Colors,
+          color:'#756B65'
+        },
+      ]
+    },
+    options: {
+      rotation:180,
+        // scales: {
+        //   y: {
+        //     beginAtZero: true
+        //   }
+        // }
+        plugins: {
+          legend: {
+            position:'right',
+            align:'center',
+              labels: {
+                padding:30,
+                usePointStyle:true,
+                // pointStyle:'circle',
+                  // This more specific font property overrides the global property
+                  font: {
+                      size: 12,
+                      family:"Suisse"
+                  }
+              }
+          }
+        }
+      }
+    });
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const bar1 = document.getElementById('barChart1');
+
+var bar2Colors =[
+  "#DCB456",
+  '#6399E9',
+  '#E96363',
+  '#2ACE97',
+]
+  new Chart(bar1, {
+    type: 'bar',
+    data: {
+      labels: [
+       'غير ربحي',
+       'شبه حكومي',
+       'خاص',
+       'حكومي',
+     
+    ],
+      datasets: [{
+        label: 'حكومي',
+        maxBarThickness: 25,
+        data: [
+          12,
+          19,
+          3,
+          5,
+        ],
+        borderWidth: 0,
+        backgroundColor: bar2Colors,
+        color:'#756B65'
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          display:false,
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+
+    }
+  });
+
+
+
+
+
+
+
+
+const bar2 = document.getElementById('barChart2');
+
+  new Chart(bar2, {
+    type: 'bar',
+    data: {
+      labels: [
+        'وزارة النقل',
+        'هيئة الحكومة الرقمية',
+        'هيئة الأمن السيبراني',
+        'وزارة الصحة',
+        'وزارة السياحة',
+        'وزارة النقل',
+        'هيئة الحكومة الرقمية',
+        'هيئة الأمن السيبراني',
+        'وزارة الصحة',
+        'وزارة السياحة',
+        'وزارة النقل',
+        'هيئة الحكومة الرقمية',
+        'هيئة الأمن السيبراني',
+        'وزارة الصحة',
+        'وزارة السياحة',
+        'وزارة النقل',
+        'هيئة الحكومة الرقمية',
+        'هيئة الأمن السيبراني',
+        'وزارة الصحة',
+        'وزارة السياحة',
+     
+    ],
+      datasets: [{
+        label: 'اهلا وسهلا',
+        maxBarThickness: 25,
+        data: [
+          15,
+          55,
+          73,
+          42,
+          66,
+          3,
+          12,
+          19,
+          3,
+          5,
+          2,
+          3,
+          15,
+          55,
+          73,
+          42,
+          66,
+          3,
+          12,
+          19,
+          3,
+          5,
+          2,
+          3
+        ],
+        borderWidth: 0,
+        backgroundColor:'#6399E9',
+        color:'#756B65'
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      plugins: {
+        legend: {
+          display:false,
+            // labels: {
+            //     // This more specific font property overrides the global property
+            //     font: {
+            //         size: 50,
+            //         family:"Suisse"
+            //     }
+            // }
+        }
+      }
+    }
+  });
+
+
+
+  

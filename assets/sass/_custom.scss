@@ -48,7 +48,7 @@ a{
     // margin-#{$end-direction}: 100px;
     position: relative;
     .nav-link{
-      font-size: 18px;
+      font-size: 20px;
       font-weight: $w-normal;
       color: $dark-one;
       transition: 300ms;
@@ -131,7 +131,7 @@ a{
         border: none;
         box-shadow: none;
         line-height: 2;
-        font-size: 16px;
+        font-size: 18px;
         color: $dark-one;
         &::placeholder{
           color: #A8A8AA;
@@ -220,7 +220,7 @@ footer{
     .footer-content-box{
       margin-top: 50px;
       p{
-        font-size: 16px;
+        font-size: 18px;
         color: $grey-color2;
         margin-bottom: 0;
       }
@@ -299,7 +299,7 @@ table{
     tr{
       background-color: $main-color;
       th,td{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: $w-normal;
         color: #fff;
         padding: 13px 15px !important;
@@ -319,7 +319,7 @@ table{
       }
     }
     td{
-      font-size: 14px;
+      font-size: 16px;
       color: $grey-color;
       padding: 16px 10px !important;
     }
@@ -342,7 +342,7 @@ table{
   padding: 40px 30px 45px ;
 }
 .section-title{
-  font-size: 25px;
+  font-size: 27px;
   font-weight: $w-bold;
   color: $grey-color;
   margin-bottom: 30px;
@@ -357,7 +357,7 @@ section + section{
   // margin-bottom: 60px;
   .white-card{
     .name {
-      font-size: 23px;
+      font-size: 25px;
       font-weight: $w-bold;
       color: $green-color;
       margin-#{$start-direction}: 15px;
@@ -377,19 +377,19 @@ section + section{
       }
     }
     .main-label{
-      font-size: 15px;
+      font-size: 17px;
       font-weight: $w-bold;
       color: $grey-color;
       margin-bottom: 20px;
     }
     .top-label{
-      font-size: 15px;
+      font-size: 17px;
       font-weight: $w-bold;
       color: $grey-color;
       background-color: #fff;
     }
     .description{
-      font-size: 15px;
+      font-size: 17px;
       font-weight: $w-normal;
       line-height: 1.5;
       color: $green-color;
@@ -408,13 +408,13 @@ section + section{
         width: 235px;
         min-height: 32px;
         flex: 0 0 235px;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: $w-normal;
         color: $grey-color;
         background-color: rgba($color: $grey-color, $alpha: 0.2);
         padding: 5px 10px;
         &.top-label{
-          font-size: 15px;
+          font-size: 17px;
           font-weight: $w-bold;
           color: $grey-color;
           background-color: #fff;
@@ -423,7 +423,7 @@ section + section{
         }
       }
       span{
-        font-size: 15px;
+        font-size: 17px;
         font-weight: $w-normal;
         color: $green-color;
         margin-#{$start-direction}: 15px;
@@ -465,14 +465,14 @@ section + section{
     }
     .content-box{
      > div{
-      font-size: 15px;
+      font-size: 17px;
       font-weight: $w-normal;
       color: $grey-color;
       border-bottom: 1px solid #E3E6EC;
       padding-bottom: 15px;
       margin-bottom: 14px;
       span{
-        font-size: 15px;
+        font-size: 17px;
         font-weight: $w-normal;
         color: $green-color;
       }
@@ -485,7 +485,7 @@ section + section{
      .more-a{
       background-color: $green-color;
       color: #fff;
-      font-size: 15px;
+      font-size: 17px;
       width: 86px;
       height: 32px;
       display: flex;
@@ -539,7 +539,7 @@ section + section{
     }
     .content-box{
       h4{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: $w-bold;
         color: $grey-color;
         margin-bottom: 0;
@@ -757,13 +757,13 @@ section + section{
   }
   .form-label{
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: $w-medium;
     color: $grey-color;
     line-height: 1;
     margin-bottom: 15px;
     span{
-      font-size: 16px;
+      font-size: 18px;
       font-weight: $w-light;
       color: #9B9B9B;
     }
@@ -771,11 +771,11 @@ section + section{
   .form-control{
     background-color: #f7f7f7;
     padding: 11px 16px;
-    line-height: 1;
-    height: 48px;
+    line-height: 1.4;
+    height: 50px;
     border: 1px solid #F7F7F7;
     transition: 300ms;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: $w-normal;
     color: $grey-color;
     box-shadow: none;
@@ -788,7 +788,7 @@ section + section{
   }
   .form-check-label{
     color: $dark-one;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: $w-medium;
   }
 
@@ -853,7 +853,7 @@ table{
     height: 100%;
     background-color: transparent;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: $w-medium;
     color: $grey-color;
     height: 55px;
@@ -898,7 +898,7 @@ table{
     align-items: center;
     justify-content: center;
     p{
-      font-size: 16px;
+      font-size: 18px;
       color: $main-color;
       margin-bottom: 30px;
     }
@@ -908,8 +908,8 @@ table{
       box-shadow: none;
       outline: none;
       color: $main-color;
-      font-size: 16px;
-      width: 195px;
+      font-size: 18px;
+      width: 215px;
       padding: 13px 20px 10px ;
       img{
         margin-#{$end-direction}: 12px;
@@ -934,7 +934,7 @@ table{
         border: 1px solid $main-color;
         border-radius: 8px;
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         padding: 13px 10px 11px;
         margin-bottom: 12px;
         img{
@@ -965,7 +965,7 @@ table{
       border: 1px solid $main-color;
       border-radius: 8px;
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       padding: 13px 20px 11px;
       margin-bottom: 12px;
       img{
@@ -978,7 +978,7 @@ select {
   width: 100%;
   height: 100%;
   border: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: $main-color;
   appearance: none;
   background-image: url(../images/select-arr.svg);
@@ -1003,7 +1003,7 @@ select {
     background-color: #fff;
     box-shadow: 0 10px 40px rgba($color: #000, $alpha: 0.05);
     h4{
-      font-size: 18px;
+      font-size: 20px;
       font-weight: $w-normal;
       color: $main-color;
       margin-bottom:15px;
@@ -1037,7 +1037,7 @@ select {
           position: relative;
           &::before{
             content: "%";
-            font-size: 20px;
+            font-size: 22px;
             position: absolute;
             #{$start-direction}: 0;
             bottom: 10px;
@@ -1083,7 +1083,7 @@ select {
     height: 465px;
   }
   h4{
-    font-size: 20px ;
+    font-size: 22px ;
     font-weight: $w-bold;
     color: $grey-color;
     text-align: center;
@@ -1145,13 +1145,13 @@ select {
     .content-area{
       display: flex;
       .number{
-        font-size: 15px;
+        font-size: 17px;
         font-weight: $w-bold;
         color: $grey-color;
         margin: 0 10px ;
       }
       .title{
-        font-size: 12px;
+        font-size: 14px;
         color: $grey-color;
       }
     }

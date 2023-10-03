@@ -328,7 +328,7 @@ var pie1Colors =[
                 // This more specific font property overrides the global property
                 font: {
                     size: 12,
-                    family:"Suisse"
+                    family:"Tajwal"
                 }
             }
         }
@@ -392,7 +392,7 @@ var pie1Colors =[
                   // This more specific font property overrides the global property
                   font: {
                       size: 12,
-                      family:"Suisse"
+                      family:"Tajwal"
                   }
               }
           }
@@ -547,7 +547,7 @@ const bar2 = document.getElementById('barChart2');
             //     // This more specific font property overrides the global property
             //     font: {
             //         size: 50,
-            //         family:"Suisse"
+            //         family:"Tajwal"
             //     }
             // }
         }
